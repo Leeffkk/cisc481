@@ -111,8 +111,15 @@ public class Problem {
         }
 
         LinkedList<HashMap<Integer, LinkedList<String>>> steps = new LinkedList<>();
+        LinkedList<Action> step_actions = new LinkedList<>();
+        HashMap<Integer, LinkedList<String>> tmp_to = null;
         while (tmp!=null) {
             steps.addFirst(tmp);
+
+            if (null != tmp_to) {
+                step_actions.addFirst(fromAction(yard, tmp, tmp_to));
+            }
+            tmp_to = tmp;
             tmp = tracking.get(tmp);
         }
         System.out.println("Actions:");
@@ -121,7 +128,12 @@ public class Problem {
             System.out.println(step);
         }
 
-        System.out.println("Number of states traversed: " + states_traversed);
+        System.out.println("Actions:");
+        for (Action action : step_actions){
+            System.out.println(action);
+        }
+
+//        System.out.println("Number of states traversed: " + states_traversed);
 
     }
 
@@ -188,7 +200,6 @@ public class Problem {
         HashMap<HashMap<Integer, LinkedList<String>>, HashMap<Integer, LinkedList<String>>> came_from = new HashMap<>();
         PriorityQueue<HashMap<Integer, LinkedList<String>>> open = new PriorityQueue<>(Comparator.comparingInt(o -> fscore.get(o)));
 
-
         gscore.put(init, 0);
         fscore.put(init, heuristics(init, goal));
 
@@ -230,17 +241,28 @@ public class Problem {
 
         }
 
-        LinkedList<HashMap<Integer, LinkedList<String>>> steps = new LinkedList<>();
+        LinkedList<HashMap<Integer, LinkedList<String>>> step_states = new LinkedList<>();
+        LinkedList<Action> step_actions = new LinkedList<>();
+
+        HashMap<Integer, LinkedList<String>> tmp_to = null;
         while (current!=null) {
-            steps.addFirst(current);
+            step_states.addFirst(current);
+            if (null != tmp_to) {
+                step_actions.addFirst(fromAction(yard, current, tmp_to));
+            }
+            tmp_to = current;
             current = came_from.get(current);
         }
-        System.out.println("Actions:");
 
-        for (HashMap<Integer, LinkedList<String>> step : steps) {
+        System.out.println("States:");
+        for (HashMap<Integer, LinkedList<String>> step : step_states) {
             System.out.println(step);
         }
 
+        System.out.println("Actions:");
+        for (Action action : step_actions){
+            System.out.println(action);
+        }
 //        System.out.println("Number of states traversed: " + states_traversed);
 
     }
@@ -263,6 +285,14 @@ public class Problem {
         return result;
     }
 
+    public static Action fromAction(ArrayList<int[]> yard, HashMap<Integer, LinkedList<String>> from, HashMap<Integer, LinkedList<String>> to) {
+        for (Action action : possible_actions(yard, from)) {
+            if (to.equals(result(action, from))) {
+                return action;
+            }
+        }
+        return null;
+    }
 
     public static void main(String[] args) {
         System.out.println("Please run test.java!!!");

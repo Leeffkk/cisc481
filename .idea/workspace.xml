@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="212bf641-cbfc-4837-9d71-1dc1a3c4a92d" name="Default Changelist" comment="" />
+    <list default="true" id="212bf641-cbfc-4837-9d71-1dc1a3c4a92d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Problem.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Problem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="248" column="120" selection-start-line="248" selection-start-column="120" selection-end-line="248" selection-end-column="120" />
+            <state relative-caret-position="223">
+              <caret line="69" column="136" selection-start-line="69" selection-start-column="136" selection-end-line="69" selection-end-column="136" />
               <folding>
                 <element signature="method#locateEngine#0;class#Problem#0" />
                 <element signature="method#possible_actions#0;class#Problem#0" />
@@ -28,6 +31,8 @@
                 <element signature="method#DFS#0;class#Problem#0" />
                 <element signature="method#AStar#0;class#Problem#0" />
                 <element signature="method#heuristics#0;class#Problem#0" />
+                <element signature="method#fromAction#0;class#Problem#0" />
+                <element signature="e#10038#10039#0" expanded="true" />
                 <element signature="method#printYard#0;class#Problem#0" />
               </folding>
             </state>
@@ -43,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+            <state relative-caret-position="425">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#testYard1#0;class#test#0" />
@@ -63,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" selection-start-line="22" selection-end-line="23" />
+            <state relative-caret-position="544">
+              <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -86,7 +91,11 @@
       <find>expand</find>
       <find>closed</find>
       <find>fscore</find>
+      <find>came_</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -94,23 +103,32 @@
         <option value="$PROJECT_DIR$/src/main/main.java" />
         <option value="$PROJECT_DIR$/src/main/problem.java" />
         <option value="$PROJECT_DIR$/src/main/Action.java" />
+        <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/src/main/Problem.java" />
         <option value="$PROJECT_DIR$/test/test.java" />
-        <option value="$PROJECT_DIR$/README.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,7 +151,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
           <expand>
@@ -315,23 +332,22 @@
       <workItem from="1569953721667" duration="1339000" />
       <workItem from="1569955242919" duration="7000" />
       <workItem from="1569966677665" duration="6609000" />
-      <workItem from="1570047594605" duration="277000" />
+      <workItem from="1570047594605" duration="641000" />
+      <workItem from="1570131353474" duration="873000" />
+      <workItem from="1570557703555" duration="444000" />
+      <workItem from="1570558614310" duration="1428000" />
     </task>
+    <task id="LOCAL-00001" summary="working version">
+      <created>1570048075812</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570048075812</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_testYard2 - 2019.10.01 at 18h 48m 31s.xml">
-      <configuration name="test.testYard2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test_testYard1 - 2019.10.01 at 18h 50m 10s.xml">
-      <configuration name="test.testYard1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test_testYard2 - 2019.10.01 at 19h 05m 19s.xml">
-      <configuration name="test.testYard2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test_testYard2 - 2019.10.01 at 19h 05m 38s.xml">
-      <configuration name="test.testYard2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="test_testYard1 - 2019.10.01 at 19h 06m 01s.xml">
       <configuration name="test.testYard1" configurationId="JUnit" />
     </history-entry>
@@ -350,14 +366,27 @@
     <history-entry file="test_testYard1 - 2019.10.01 at 19h 13m 04s.xml">
       <configuration name="test.testYard1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="test_testYard1 - 2019.10.03 at 15h 37m 50s.xml">
+      <configuration name="test.testYard1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testYard1 - 2019.10.08 at 14h 34m 42s.xml">
+      <configuration name="test.testYard1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testYard1 - 2019.10.08 at 14h 36m 40s.xml">
+      <configuration name="test.testYard1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testYard1 - 2019.10.08 at 14h 39m 32s.xml">
+      <configuration name="test.testYard1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50694000" />
+    <option name="totallyTimeSpent" value="53803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4814453" visible="true" weight="0.14209116" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4814453" visible="true" weight="0.14812332" />
       <window_info id="Structure" order="1" sideWeight="0.5185547" side_tool="true" weight="0.027249683" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -367,7 +396,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19623233" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21954674" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39952904" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -375,7 +404,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3265306" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32577905" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -424,6 +453,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="working version" />
+    <option name="LAST_COMMIT_MESSAGE" value="working version" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CISC481_hw1.iml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -453,6 +486,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Action.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -460,32 +500,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testYard1#0;class#test#0" />
-            <element signature="method#testYard2#0;class#test#0" />
-            <element signature="method#testYard3#0;class#test#0" />
-            <element signature="method#testYard4#0;class#test#0" />
-            <element signature="method#testYard5#0;class#test#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Problem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="248" column="120" selection-start-line="248" selection-start-column="120" selection-end-line="248" selection-end-column="120" />
+        <state relative-caret-position="223">
+          <caret line="69" column="136" selection-start-line="69" selection-start-column="136" selection-end-line="69" selection-end-column="136" />
           <folding>
             <element signature="method#locateEngine#0;class#Problem#0" />
             <element signature="method#possible_actions#0;class#Problem#0" />
@@ -495,7 +513,24 @@
             <element signature="method#DFS#0;class#Problem#0" />
             <element signature="method#AStar#0;class#Problem#0" />
             <element signature="method#heuristics#0;class#Problem#0" />
+            <element signature="method#fromAction#0;class#Problem#0" />
+            <element signature="e#10038#10039#0" expanded="true" />
             <element signature="method#printYard#0;class#Problem#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testYard1#0;class#test#0" />
+            <element signature="method#testYard2#0;class#test#0" />
+            <element signature="method#testYard3#0;class#test#0" />
+            <element signature="method#testYard4#0;class#test#0" />
+            <element signature="method#testYard5#0;class#test#0" />
           </folding>
         </state>
       </provider>
@@ -517,6 +552,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -539,6 +575,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -562,6 +599,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
